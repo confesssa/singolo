@@ -108,6 +108,8 @@ navigation:not(:first-child)::before {
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
+  padding-top: 40px;
+  padding-left: 25px;
 }
 
 .service-text {
@@ -116,6 +118,16 @@ navigation:not(:first-child)::before {
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
+}
+
+.layout-3-column {
+  display: flex;
+}
+
+.service-item {
+  display: flex;
+  /* flex-direction: row; */
+  width: 300px;
 }
 
 .service-item-title {

@@ -1,4 +1,7 @@
-
+Body,
+h2 {
+  margin: 0;
+}
 
 * {
   /* background-color: yellow; */
@@ -17,6 +20,9 @@ header {
   width: 100%;
   /* margin: 0 auto; */
   background-color: #2d303a;
+  box-shadow: 0 -7px 0 0 #323645 inset;
+  position: sticky;
+  top: 0;
 }
 
 .header {
@@ -33,7 +39,7 @@ h1 {
   font-family: "Lato";
   font-weight: 700;
   text-align: left;
-  margin: 45px 0;
+  margin: 44.5px 0;
 }
 
 .header-colored {
@@ -64,6 +70,10 @@ a {
   text-align: left;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 p {
   margin: 0;
 }
@@ -84,6 +94,7 @@ navigation:not(:first-child)::before {
 .slider {
   width: 100%;
   background-color: #f06c64;
+  box-shadow: 0 -6px 0 0 #ea666b inset;
 }
 
 /* SERVICE */

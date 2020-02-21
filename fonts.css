@@ -1,51 +1,51 @@
 @font-face {
   font-family: "Lato";
-  src: url("Fonts/Lato-Light.eot"); /* IE9 Compat Modes */
-  src: url("Fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("Fonts/Lato-Light.otf") format("opentype"), /* Open Type Font */
-    url("Fonts/Lato-Light.svg") format("svg"), /* Legacy iOS */
-    url("Fonts/Lato-Light.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("Fonts/Lato-Light.woff") format("woff"), /* Modern Browsers */
-    url("Fonts/Lato-Light.woff2") format("woff2"); /* Modern Browsers */
+  src: url("Assets/Fonts/Lato-Light.eot"); /* IE9 Compat Modes */
+  src: url("Assets/Fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Assets/Fonts/Lato-Light.otf") format("opentype"), /* Open Type Font */
+    url("Assets/Fonts/Lato-Light.svg") format("svg"), /* Legacy iOS */
+    url("Assets/Fonts/Lato-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("Assets/Fonts/Lato-Light.woff") format("woff"), /* Modern Browsers */
+    url("Assets/Fonts/Lato-Light.woff2") format("woff2"); /* Modern Browsers */
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("Fonts/Lato-Regular.eot"); /* IE9 Compat Modes */
-  src: url("Fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("Fonts/Lato-Regular.otf") format("opentype"), /* Open Type Font */
-    url("Fonts/Lato-Regular.svg") format("svg"), /* Legacy iOS */
-    url("Fonts/Lato-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("Fonts/Lato-Regular.woff") format("woff"), /* Modern Browsers */
-    url("Fonts/Lato-Regular.woff2") format("woff2"); /* Modern Browsers */
+  src: url("Assets/Assets/Fonts/Lato-Regular.eot"); /* IE9 Compat Modes */
+  src: url("Assets/Fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Assets/Fonts/Lato-Regular.otf") format("opentype"), /* Open Type Font */
+    url("Assets/Fonts/Lato-Regular.svg") format("svg"), /* Legacy iOS */
+    url("Assets/Fonts/Lato-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("Assets/Fonts/Lato-Regular.woff") format("woff"), /* Modern Browsers */
+    url("Assets/Fonts/Lato-Regular.woff2") format("woff2"); /* Modern Browsers */
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("./Fonts/Lato-Bold.eot"); /* IE9 Compat Modes */
-  src: url("./Fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./Fonts/Lato-Bold.otf") format("opentype"), /* Open Type Font */
-    url("./Fonts/Lato-Bold.svg") format("svg"), /* Legacy iOS */
-    url("./Fonts/Lato-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./Fonts/Lato-Bold.woff") format("woff"), /* Modern Browsers */
-    url("./Fonts/Lato-Bold.woff2") format("woff2"); /* Modern Browsers */
+  src: url("./Assets/Fonts/Lato-Bold.eot"); /* IE9 Compat Modes */
+  src: url("./Assets/Fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./Assets/Fonts/Lato-Bold.otf") format("opentype"), /* Open Type Font */
+    url("./Assets/Fonts/Lato-Bold.svg") format("svg"), /* Legacy iOS */
+    url("./Assets/Fonts/Lato-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./Assets/Fonts/Lato-Bold.woff") format("woff"), /* Modern Browsers */
+    url("./Assets/Fonts/Lato-Bold.woff2") format("woff2"); /* Modern Browsers */
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("Fonts/Lato-Black.eot"); /* IE9 Compat Modes */
-  src: url("Fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("Fonts/Lato-Black.otf") format("opentype"), /* Open Type Font */
-    url("Fonts/Lato-Black.svg") format("svg"), /* Legacy iOS */
-    url("Fonts/Lato-Black.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("Fonts/Lato-Black.woff") format("woff"), /* Modern Browsers */
-    url("Fonts/Lato-Black.woff2") format("woff2"); /* Modern Browsers */
+  src: url("Assets/Fonts/Lato-Black.eot"); /* IE9 Compat Modes */
+  src: url("Assets/Fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Assets/Fonts/Lato-Black.otf") format("opentype"), /* Open Type Font */
+    url("Assets/Fonts/Lato-Black.svg") format("svg"), /* Legacy iOS */
+    url("Assets/Fonts/Lato-Black.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("Assets/Fonts/Lato-Black.woff") format("woff"), /* Modern Browsers */
+    url("Assets/Fonts/Lato-Black.woff2") format("woff2"); /* Modern Browsers */
   font-weight: 900;
   font-style: normal;
 }

@@ -100,25 +100,21 @@ p {
   box-shadow: 0 -6px 0 0 #ea666b inset;
 }
 
-#slider-first-picture, #slider-second-picture {
-  position: relative;
+.slider-phones {
+  display: flex;
+  height: 600px;
 }
 
-#slider-first-picture {
-  z-index: 1;
-  top: -95px;
-  left: -40px;
-  /* margin-top: 89px;
-  margin-left: 70px; */
+
+.slider-first-picture {
+  margin-top: 38px;
+  margin-left: 62.5px;
 }
 
-#slider-second-picture {
-  z-index: 2;
-  top: -1293px;
-  right: 40px;
-  /* margin-top: 50px;
-  margin-right: 50px; */
-}
+.slider-second-picture {
+  margin-top: 148px;
+  margin-left: 68px;
+} 
 
 
 /* SERVICE */

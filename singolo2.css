@@ -42,3 +42,40 @@
 .tag-selected {}
 
 .tag-bordered {}
+
+/* ABOUT US */
+.about-us {
+  width: 100%;
+  background-color: #f2f2f2;
+  box-shadow: 0 -7px 0 0 #ffffff inset;
+}
+
+.about-us-item {
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.about-us-item-title {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  letter-spacing: 0.1px;
+  margin-top: -3px;
+}
+
+.about-us-item-text {
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  margin-top: 10px;
+  letter-spacing: 0.1px;
+  text-align: justify;
+}
+
+.social-media {
+  display: flex;
+}

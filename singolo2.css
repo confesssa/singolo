@@ -8,3 +8,37 @@
   max-width: 940px;
   margin: 0 auto;
 }
+
+/* PORTFOLIO */
+.portfolio {
+  width: 100%;
+  background-color: #2d303a;
+  box-shadow: 0 -7px 0 0 #323746 inset;
+}
+
+.service-title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  padding-top: 70px;
+  letter-spacing: -0.2px;
+}
+
+.service-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  margin-top: 26.7px;
+}
+
+.portfolio-tags {}
+
+.tag {}
+
+.tag-selected {}
+
+.tag-bordered {}

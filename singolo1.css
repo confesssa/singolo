@@ -124,7 +124,7 @@ p {
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
-  padding-top: 70px;
+  padding-top: 69px;
   padding-left: 0px;
   letter-spacing: -0.3px;
 }
@@ -136,12 +136,13 @@ p {
   font-family: "Lato";
   font-weight: 300;
   letter-spacing: 0.1px;
-  padding-top: 27px;
+  word-spacing: -0.6px;
+  padding-top: 26px;
 }
 
 .layout-3-column-number-1 {
   display: flex;
-  padding-top: 48px;
+  padding-top: 47.5px;
   justify-content: space-between;
 }
 
@@ -173,6 +174,7 @@ p {
   margin-top: 10px;
   letter-spacing: 0.1px;
   text-align: justify;
+  word-spacing: -0.1px;
 }
 
 .layout-3-column-number-2 {

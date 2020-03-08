@@ -94,6 +94,22 @@ p {
   box-shadow: 0 -6px 0 0 #ea666b inset;
 }
 
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  /* margin: 0 auto; */
+  margin-top: 281px;
+}
+
+.slider-button:hover {
+  cursor: pointer;
+}
+
+.slider-button-right {
+  margin-left: 907px;
+}
+
 .slider-phones {
   display: flex;
   height: 600px;

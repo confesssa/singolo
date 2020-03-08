@@ -62,3 +62,14 @@ textarea::placeholder {
   font-family: "Lato";
   font-weight: 400;
 }
+
+/* FOOTER */
+footer {
+  background-color: ;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,64 @@
+* {
+  font-family: Lato, sans-serif ;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.content {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+/* QUOTE */
+.quote {
+  background-color: #f06c64;
+  box-shadow: 0 -7px 0 0 #ea676b inset;
+}
+
+.quote-title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  padding-top: 68px;
+  letter-spacing: -0.1px;
+}
+
+.quote-text {
+  width: 940px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.first-line {
+  margin-top: 28px;
+  letter-spacing: 0.14px;
+}
+
+.second-line {
+  margin-top: -27px;
+}
+
+.quote-content {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input::placeholder,
+textarea::placeholder {
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+}

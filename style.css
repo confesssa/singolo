@@ -297,6 +297,11 @@ textarea::placeholder {
   font-weight: 400;
 }
 
+#Name:invalid,
+#Email:invalid {
+  border: #ffffff solid 1px;
+}
+
 .quote-contact {
   margin-left: 21px;
   margin-top: 3px;
@@ -326,7 +331,6 @@ textarea::placeholder {
 
 .quote-contacts {
   width: 300px;
-  /* height: 175px; */
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;

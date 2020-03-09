@@ -231,7 +231,7 @@ p {
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
-  margin-top: 26.7px;
+  margin-top: -0.3px;
 }
 
 .portfolio-tags {
@@ -282,6 +282,7 @@ p {
 .layout-3-column {
   display: flex;
   padding-top: 45px;
+  padding-bottom: 72px;
 }
 
 .about-us-item {
@@ -476,7 +477,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 21px 0;
+  padding: 10px 0;
 }
 
 .copyright {

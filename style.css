@@ -343,6 +343,19 @@ form {
   height: 197px;
 }
 
+.input-5 {
+  width: 618px;
+  cursor: pointer;
+  margin-top: -56px;
+  font-size: 1.6rem;
+  color: #f0d8d9;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.input-5:hover {
+  opacity: 0.5;
+}
+
 input::placeholder,
 textarea::placeholder {
   background-color: #d6564f;

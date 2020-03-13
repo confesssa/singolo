@@ -313,8 +313,10 @@ form {
   display: block;
   border: none;
   background-color: #d6564f;
-  color: #f48c8f;
-  font-size: 1.2rem;
+  color: #f0d8d9;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: 'Lato', Arial, sans-serif;
   line-height: 21.56px;
   width: 590px;
   height: 38px;
@@ -353,7 +355,7 @@ form {
 }
 
 .input-5:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 input::placeholder,
@@ -365,8 +367,8 @@ textarea::placeholder {
   font-weight: 400;
 }
 
-#Name:invalid,
-#Email:invalid {
+#Name:active,
+#Email:active {
   border: #ffffff solid 1px;
 }
 

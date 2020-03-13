@@ -224,6 +224,15 @@ p {
 
 .portfolio-tags {
   padding-top: 10px;
+  margin-left: 0;
+  color: #767e9e;
+}
+
+.portfolio-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 0;
 }
 
 .tag {
@@ -234,18 +243,36 @@ p {
   border: 1px solid #666699;
   border-radius: 5px;
   margin-right: 19px;
+  height: 22px;
+  text-align: center;
+  margin-right: 10px;
 }
 
-.tag:hover {
+.tag:first-child {
+  width: 27px;
+}
+
+.tag:nth-child(2) {
+  width: 77px;
+}
+
+.tag:nth-child(3) {
+  width: 91px;
+}
+
+.tag:last-child {
+  width: 55px;
+}
+
+.tag:hover,
+.tag-selected:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 
 .tag-selected {
-  border: 1px solid #ffffff;
+  border: 1px solid #767e9e;;
 }
-
-.tag-bordered {}
 
 .layout-4-column {
   margin-top: 5px;
@@ -260,6 +287,11 @@ p {
 .portfolio-image {
   margin-right: 20px;
   margin-top: 16px;
+}
+
+.portfolio-link {
+  text-decoration: none;
+  color: #767e9e;
 }
 
 /* ABOUT US */

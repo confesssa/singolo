@@ -175,6 +175,10 @@ p {
   line-height: 18px;
   font-weight: 900;
   letter-spacing: 0.1px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 299px;
 }
 
 .service-item-title {
@@ -249,6 +253,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   width: 971px;
+  max-height: 562px;
+  overflow: hidden;
 }
 
 .portfolio-image {

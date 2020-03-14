@@ -289,7 +289,7 @@ p {
   margin-top: 16px;
 }
 
-.portfolio-link {
+.portfolio-link:link {
   text-decoration: none;
   color: #767e9e;
 }

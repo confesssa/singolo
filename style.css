@@ -265,15 +265,18 @@ p {
   width: 55px;
 }
 
-.tag:hover {
+/* .tag.active {
   opacity: 0.6;
   cursor: pointer;
-}
+} */
 
-.tag:active {
-  border: 1px solid #ffffff;
+.portfolio-link.active {
   color: #ffffff;
 }
+
+/* a:active {
+  color: #ffffff;
+} */
 
 .layout-4-column {
   margin-top: 5px;

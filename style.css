@@ -76,11 +76,12 @@ a {
   text-align: left;
 }
 
-.header-link:hover {
+.header-link.active {
   color: #f06c64;
 }
 
-.header-link:active {
+.header-link:not(.active):hover {
+  cursor: pointer;
   color: #666699;
 }
 
@@ -448,7 +449,7 @@ textarea::placeholder {
 }
 
 .quote-link:active {
-  color: d6564f;
+  color: #d6564f;
 }
 
 /* FOOTER */

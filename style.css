@@ -265,18 +265,9 @@ p {
   width: 55px;
 }
 
-/* .tag.active {
-  opacity: 0.6;
-  cursor: pointer;
-} */
-
 .portfolio-link.active {
   color: #ffffff;
 }
-
-/* a:active {
-  color: #ffffff;
-} */
 
 .layout-4-column {
   margin-top: 5px;
@@ -288,7 +279,7 @@ p {
   overflow: hidden;
 }
 
-.portfolio-image {
+.portfolio-item {
   margin-right: 20px;
   margin-top: 16px;
 }
@@ -297,6 +288,17 @@ p {
   text-decoration: none;
   color: #767e9e;
 }
+
+.portfolio-image {
+  height: 187px;
+  width: 220px;
+}
+
+.portfolio-image.active {
+  box-sizing: border-box;
+  border: #F06C64 5px solid;
+}
+
 
 /* ABOUT US */
 .about-us {

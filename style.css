@@ -20,7 +20,6 @@ header {
   background-color: #2d303a;
   box-shadow: 0 -7px 0 0 #323645 inset;
   top: 0;
-  color: #f0d8d9;
 }
 
 .header {
@@ -43,23 +42,18 @@ h1 {
   color: #f06c64;
 }
 
+.logo-link {
+  color: #f0d8d9;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
   margin-top: 38px;
+  list-style-type: none;
 }
 
-ul {
-  margin: 0;
-  list-style: none;
-}
-
-ul.navigation li {
-  display: inline;
-  margin: 0 0 0 8px;
-}
-
-ul.navigation li+li:before {
+.navigation li+li:before {
   content: ".";
   font-weight: 700;
   font-size: 1.9rem;
@@ -72,6 +66,9 @@ ul.navigation li+li:before {
 
 a {
   text-decoration: none;
+}
+
+.header-link {
   font-size: 1.2rem;
   line-height: 6px;
   color: #ffffff;
@@ -79,9 +76,12 @@ a {
   text-align: left;
 }
 
-a:hover {
-  text-decoration: underline;
-  opacity: 0.7;
+.header-link:hover {
+  color: #f06c64;
+}
+
+.header-link:active {
+  color: #666699;
 }
 
 p {
@@ -100,7 +100,7 @@ p {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  margin-top: 281px;
+  margin-top: -320px;
 }
 
 .slider-button:hover {
@@ -240,7 +240,7 @@ p {
   line-height: 22px;
   color: #767e9e;
   font-weight: 400;
-  border: 1px solid #666699;
+  border: 1px solid #767e9e;
   border-radius: 5px;
   margin-right: 19px;
   height: 22px;
@@ -264,14 +264,14 @@ p {
   width: 55px;
 }
 
-.tag:hover,
-.tag-selected:hover {
+.tag:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 
-.tag-selected {
-  border: 1px solid #767e9e;;
+.tag:active {
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .layout-4-column {
@@ -289,7 +289,7 @@ p {
   margin-top: 16px;
 }
 
-.portfolio-link:link {
+.portfolio-link {
   text-decoration: none;
   color: #767e9e;
 }
@@ -431,7 +431,7 @@ textarea::placeholder {
   font-weight: 400;
 }
 
-.quote-contacts-first {
+.contact-links {
   padding-top: 21px;
 }
 
@@ -439,8 +439,16 @@ textarea::placeholder {
   padding-right: 12px;
 }
 
-a p {
+.quote-link {
   color: #f0d8d9;
+}
+
+.quote-link:hover {
+  opacity: 0.5;
+}
+
+.quote-link:active {
+  color: d6564f;
 }
 
 /* FOOTER */

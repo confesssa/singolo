@@ -13,15 +13,15 @@
     <div class="content">
       <section class="header">
         <a href="#">
-          <h1><span> Singolo</span> <span class="header-colored">*</span></h1>
+          <h1><span class='logo-link' > Singolo</span> <span class="header-colored">*</span></h1>
         </a>
         <nav>
           <ul class="navigation">
-            <li><a class="header-colored" href="#">home</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a class='header-link' href="#">home</a></li>
+            <li><a class='header-link' href="#services">services</a></li>
+            <li><a class='header-link' href="#portfolio">portfolio</a></li>
+            <li><a class='header-link' href="#about">about</a></li>
+            <li><a class='header-link' href="#contact">contact</a></li>
           </ul>
         </nav>
       </section>
@@ -30,10 +30,6 @@
 
   <div class="slider">
     <div class="content">
-      <div class="slider-buttons">
-          <img class="slider-button" src="./Assets/Images/slider-preview.svg" alt="slider">
-          <img class=" slider-button slider-button-right" src="./Assets/Images/slider-next.svg" alt="slider">
-      </div>
       <div class="slider-phones">
         <div class="slider-first-picture">
           <img src="./Assets/Images/iPhone Vertical.png" alt="iphone">
@@ -48,6 +44,10 @@
 
   <section class="service">
     <div class="content">
+      <div class="slider-buttons">
+        <img class="slider-button" src="./Assets/Images/slider-preview.svg" alt="slider">
+        <img class=" slider-button slider-button-right" src="./Assets/Images/slider-next.svg" alt="slider">
+      </div>
       <h2 id='services' class="section-title">Our Services</h2>
       <p class=" section-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class="layout-3-column-number-1">
@@ -126,7 +126,7 @@
       <p class=" section-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
       <nav class="portfolio-tags">
         <ul class='portfolio-list'>
-          <li class="tag tag-selected"><a href="#">All</a></li>
+          <li class='tag'><a class='portfolio-link' href="#">All</a></li>
           <li class="tag"><a class='portfolio-link' href="#">Web Design</a></li>
           <li class="tag"><a class='portfolio-link' href="#">Graphic Design</a></li>
           <li class="tag"><a class='portfolio-link' href="#">Artwork</a></li>
@@ -234,10 +234,11 @@
         <div id='contact' class="quote-contact">
           <h3 class="layout-title quote-contact-title">Contact Information</h3>
           <p class=" layout-text quote-contact-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-          <p class='quote-contacts quote-contacts-first'><img class='quote-img' src="./Assets/Images/quote-location.png" alt="location"> Elm St. 14/05 Lost City</p>
-          <p class='quote-contacts'><img class='quote-img' src="./Assets/Images/quote-phone.png" alt="phone"><a href="tel:035283318635">03528 331 86 35</a></p>
-          <p class='quote-contacts'><img class='quote-img' src="./Assets/Images/quote-mail.png" alt="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></p>
-
+          <div class="contact-links">
+            <p class='quote-contacts'><img class='quote-img' src="./Assets/Images/quote-location.png" alt="location"><a class='quote-link' href="#"> Elm St. 14/05 Lost City</a></p>
+            <p class='quote-contacts'><img class='quote-img' src="./Assets/Images/quote-phone.png" alt="phone"><a class='quote-link' href="tel:035283318635">03528 331 86 35</a></p>
+            <p class='quote-contacts'><img class='quote-img' src="./Assets/Images/quote-mail.png" alt="mail"><a class='quote-link' href="mailto:info@singolo.com">info@singolo.com</a></p>
+          </div>
         </div>
       </div>
     </div>

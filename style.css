@@ -6,6 +6,7 @@
 * {
   font-family: 'Lato', Arial, sans-serif;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .content {
@@ -232,7 +233,8 @@ p {
 .portfolio-list {
   display: flex;
   list-style: none;
-  justify-content: flex-start;
+  width: 297px;
+  left: 0;
   padding: 0;
 }
 

@@ -459,6 +459,33 @@ textarea::placeholder {
   color: #d6564f;
 }
 
+/* POPUP */
+
+#message-block {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #0008;
+}
+
+#message-block.hidden {
+  display: none;
+}
+
+#message {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 200px;
+  width: 300px;
+  line-height: 35px;
+
+
 /* FOOTER */
 footer {
   background-color: #2d303a;

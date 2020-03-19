@@ -219,6 +219,17 @@
   </section>
 
   <section class="quote">
+    <div id="message-block" class=''>
+      <div id="message">
+        <p>Письмо отправлено!</p>
+        <p>Тема: <span id='topic'>Без темы</span>  </p>
+        <p>Описание: <span id='description'>Без описания</span></p>
+        <!-- <p> Text: <span id='result'></span></p> -->
+        <br>
+        <button id="close-btn">OK</button>
+      </div>
+    </div>
+    
     <div class="content">
       <h2 class="section-title quote-title">Get a Quote</h2>
       <p class="section-text quote-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -228,7 +239,7 @@
           <input class='input input-2' type="email" name="Email" id="Email" placeholder="Email (Required)" required>
           <input class='input input-3' type="text" name="Subject" id="Subject" placeholder="Subject">
           <textarea class='input input-4' name="description" id="description" cols="30" rows="10" placeholder="Describe your project in detail..." style="resize:none"></textarea>
-          <input  class='input input-5' type="submit" value="submit">
+          <input id='btn' class='input input-5' type="submit" value="submit">
 
         </form>
         <div id='contact' class="quote-contact">

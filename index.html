@@ -125,7 +125,7 @@
       <h2 class=" section-title">Portfolio</h2>
       <p class=" section-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
       <nav class="portfolio-tags">
-        <ul class='portfolio-list'>
+        <ul id='tags' class='portfolio-list'>
           <li class='tag'><a class='portfolio-link active' href="#portfolio">All</a></li>
           <li class='tag'><a class='portfolio-link' href="#portfolio">Web Design</a></li>
           <li class='tag'><a class='portfolio-link' href="#portfolio">Graphic Design</a></li>
@@ -133,7 +133,45 @@
         </ul>
       </nav>
       <div id='layout' class="layout-4-column">
-        <div class="portfolio-item">
+        <ul class="portfolio-items">
+          <li id='portfolio-item' class="portfolio-item">
+            <img class='portfolio-image' src="./Assets/Images/portfolio_image1.png" alt="illustration">
+          </li>
+          <li id='portfolio-item' class="portfolio-item">
+            <img class='portfolio-image' src="./Assets/Images/portfolio_image2.png" alt="illustration">
+          </li>
+          <li id='portfolio-item' class="portfolio-item">
+            <img class='portfolio-image' src="./Assets/Images/portfolio_image3.png" alt="illustration">
+          </li>
+          <li  id='portfolio-item' class="portfolio-item">
+            <img  class='portfolio-image' src="./Assets/Images/portfolio_image4.png" alt="illustration">
+          </li>
+          <li id='portfolio-item' class="portfolio-item">
+            <img  class='portfolio-image' src="./Assets/Images/portfolio_image5.png" alt="illustration">
+          </li>
+          <li id='portfolio-item' class="portfolio-item">
+            <img  class='portfolio-image' src="./Assets/Images/portfolio_image6.png" alt="illustration">
+          </li>
+          <li id='portfolio-item' class="portfolio-item">
+            <img  class='portfolio-image' src="./Assets/Images/portfolio_image7.png" alt="illustration">
+          </li>
+          <li id='portfolio-item' class="portfolio-item">
+            <img  class='portfolio-image' src="./Assets/Images/portfolio_image8.png" alt="illustration">
+          </li>
+          <li id='portfolio-item' class="portfolio-item">
+            <img  class='portfolio-image' src="./Assets/Images/portfolio_image9.png" alt="illustration">
+          </li>
+          <li id='portfolio-item' class="portfolio-item">
+            <img  class='portfolio-image' src="./Assets/Images/portfolio_image10.png" alt="illustration">
+          </li>
+          <li id='portfolio-item' class="portfolio-item">
+            <img  class='portfolio-image' src="./Assets/Images/portfolio_image11.png" alt="illustration">
+          </li>
+          <li id='portfolio-item' class="portfolio-item">
+            <img  class='portfolio-image' src="./Assets/Images/portfolio_image12.png" alt="illustration">
+          </li>
+        </ul>
+        <!-- <div class="portfolio-item">
           <img class='portfolio-image' src="./Assets/Images/portfolio_image1.png" alt="illustration">
         </div>
         <div class="portfolio-item">
@@ -141,8 +179,8 @@
         </div>
         <div class="portfolio-item">
           <img class='portfolio-image' src="./Assets/Images/portfolio_image3.png" alt="illustration">
-        </div>
-        <div class="portfolio-item">
+        </div> -->
+        <!-- <div class="portfolio-item">
           <img  class='portfolio-image' src="./Assets/Images/portfolio_image4.png" alt="illustration">
         </div>
         <div class="portfolio-item">
@@ -156,8 +194,8 @@
         </div>
         <div class="portfolio-item">
           <img  class='portfolio-image' src="./Assets/Images/portfolio_image8.png" alt="illustration">
-        </div>
-        <div class="portfolio-item">
+        </div> -->
+        <!-- <div class="portfolio-item">
           <img  class='portfolio-image' src="./Assets/Images/portfolio_image9.png" alt="illustration">
         </div>
         <div class="portfolio-item">
@@ -168,7 +206,7 @@
         </div>
         <div class="portfolio-item">
           <img  class='portfolio-image' src="./Assets/Images/portfolio_image12.png" alt="illustration">
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -219,16 +257,26 @@
   </section>
 
   <section class="quote">
+    <div id="message-block" class='hidden'>
+      <div id="message">
+        <p class='message-title'>Письмо отправлено!</p>
+        <p class='topic'>Тема: <span id='result-topic'>Без темы</span>  </p>
+        <p class='description'>Описание: <span id='result-description'>Без описания</span></p>
+        <br>
+        <button id="close-btn" class='input input-6' >OK</button>
+      </div>
+    </div>
+    
     <div class="content">
       <h2 class="section-title quote-title">Get a Quote</h2>
       <p class="section-text quote-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class="quote-content">
         <form action="#" method="POST">
-          <input class='input input-1' type="text" name="Name" id="Name" placeholder="Name (Required)" required>
-          <input class='input input-2' type="email" name="Email" id="Email" placeholder="Email (Required)" required>
-          <input class='input input-3' type="text" name="Subject" id="Subject" placeholder="Subject">
-          <textarea class='input input-4' name="description" id="description" cols="30" rows="10" placeholder="Describe your project in detail..." style="resize:none"></textarea>
-          <input  class='input input-5' type="submit" value="submit">
+          <input id="name" class='input input-1' type="text" name="Name" placeholder="Name (Required)" required>
+          <input id="mail" class='input input-2' type="email" name="Email" placeholder="Email (Required)" required>
+          <input id="subject" class='input input-3' type="text" name="Subject"  placeholder="Subject">
+          <textarea id="description" class='input input-4' name="description" cols="30" rows="10" placeholder="Describe your project in detail..." style="resize:none"></textarea>
+          <input id='btn' class='input input-5' type="submit" value="submit">
 
         </form>
         <div id='contact' class="quote-contact">

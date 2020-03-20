@@ -20,9 +20,10 @@ MENU.addEventListener('click', (event) => {
 TAGS.addEventListener('click', (event) => {
   TAGS.querySelectorAll(".portfolio-link").forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
-
-    let element = document.querySelectorAll('.portfolio-items > .portfolio-item:first-child');
-    document.portfolio-items.appendChild(element);
+    
+    let listPortfolio = document.querySelector('.portfolio-items');
+    let element = document.querySelector('.portfolio-items > .portfolio-item:first-child');
+    listPortfolio.appendChild(element);
     });
 
 // IMAGE-SELECTION

@@ -273,17 +273,18 @@ p {
 
 .layout-4-column {
   margin-top: 5px;
-  padding-bottom: 69px;
+  padding-bottom: 113px;
+}
+
+.portfolio-items {
+  margin-right: 20px;
+  margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
   width: 971px;
-  max-height: 562px;
+  max-height: 595px;
   overflow: hidden;
-}
-
-.portfolio-item {
-  margin-right: 20px;
-  margin-top: 16px;
+  list-style: none;
 }
 
 .portfolio-link {
@@ -294,6 +295,8 @@ p {
 .portfolio-image {
   height: 187px;
   width: 220px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .portfolio-image.active {
@@ -476,14 +479,47 @@ textarea::placeholder {
 
 #message {
   position: absolute;
-  top: 45%;
-  left: 40%;
-  border: 2px solid black;
+  top: 25%;
+  left: 35%;
+  border: 4px solid white;
   text-align: center;
-  font-size: 1.5rem;
-  height: 200px;
-  width: 300px;
+  font-size: 1.8rem;
+  max-height: 300px;
+  max-width: 400px;
   line-height: 35px;
+  font-size: 2rem;
+  color: #ea666b;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.message-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#message p {
+  margin-top: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.topic,
+.description {
+  margin-left: 0;
+}
+
+#result-topic,
+#result-description {
+  color: #ffffff;
+}
+
+.input-6 {
+  width: 120px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  margin: 0 auto;
+}
 
 
 /* FOOTER */

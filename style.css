@@ -477,7 +477,7 @@ textarea::placeholder {
   display: none;
 }
 
-#message {
+.message {
   position: absolute;
   top: 25%;
   left: 35%;
@@ -497,7 +497,7 @@ textarea::placeholder {
   font-size: 3rem;
 }
 
-#message p {
+.message p {
   margin-top: 30px;
   overflow: hidden;
   text-overflow: ellipsis;

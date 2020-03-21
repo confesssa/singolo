@@ -41,17 +41,17 @@ BUTTON.addEventListener('click', (event) => {
     document.querySelector('#result-description').innerText = description;
     document.querySelector('#message-block').classList.remove('hidden');
   
-    // if(topic !== '') {
-    //   document.querySelector('#result-topic').innerText = topic;
-    // } else {
-    //   document.querySelector('#result-topic').innerText = 'Без темы'
-    // }
+    if(topic !== '') {
+      document.querySelector('#result-topic').innerText = topic;
+    } else {
+      document.querySelector('#result-topic').innerText = 'Без темы'
+    }
   
-    // if(description !== '') {
-    //   document.querySelector('#result-description').innerText = description;
-    // } else {
-    //   document.querySelector('#result-description').innerText = 'Без описания';
-    // }
+    if(description !== '') {
+      document.querySelector('#result-description').innerText = description;
+    } else {
+      document.querySelector('#result-description').innerText = 'Без описания';
+    }
   
   })
   

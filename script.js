@@ -33,35 +33,34 @@ LAYOUT.addEventListener('click', (event) => {
     });
 
 // POPUP-SHOW
-BUTTON.addEventListener('click', () => {
-  const topic = document.getElementById('topic').value.toString();
-  const description = document.getElementById('description').value.toString();
-  document.getElementById('topic').innerText = topic;
-  document.getElementById('description').innerText = description;
-  document.getElementById('message-block').classList.remove('hidden');
-
-  if(topic !== '') {
-    document.getElementById('result-topic').innerText = topic;
-  } else {
-    document.getElementById('result-topic').innerText = 'Без темы'
-  }
-
-  if(description !== '') {
-    document.getElementById('result-description').innerText = description;
-  } else {
-    document.getElementById('result-description').innerText = 'Без описания';
-  }
-
-})
-
-// POPUP-HIDDEN
-CLOSE_BUTTON.addEventListener('click', () => {
-  const topic = document.getElementById('topic').value.toString();
-  const description = document.getElementById('description').value.toString();
-  document.getElementById('name').innerText = '';
-  document.getElementById('mail').innerText = '';
-  document.getElementById('topic').innerText = '';
-  document.getElementById('description').innerText = '';
-  document.getElementById('message-block').classList.add('hidden');
-});
-    
+BUTTON.addEventListener('click', (event) => {
+  event.preventDefault();
+    let topic = document.querySelector('#form-subject').value;
+    let description = document.querySelector('#form-description').value;
+    document.querySelector('#result-topic').innerText = topic;
+    document.querySelector('#result-description').innerText = description;
+    document.querySelector('#message-block').classList.remove('hidden');
+  
+    if(topic !== '') {
+      document.querySelector('#result-topic').innerText = topic;
+    } else {
+      document.querySelector('#result-topic').innerText = 'Без темы'
+    }
+  
+    if(description !== '') {
+      document.querySelector('#result-description').innerText = description;
+    } else {
+      document.querySelector('#result-description').innerText = 'Без описания';
+    }
+  
+  })
+  
+  // POPUP-HIDDEN
+  CLOSE_BUTTON.addEventListener('click', () => {
+    event.preventDefault();
+    let topic = document.querySelector('#form-subject').value;
+    let description = document.querySelector('#form-description').value;
+    document.querySelector('#result-topic').innerText = '';
+    document.querySelector('#result-description').innerText = '';
+    document.querySelector('#message-block').classList.add('hidden');
+  });    

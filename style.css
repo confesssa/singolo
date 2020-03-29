@@ -19,7 +19,15 @@
   @media screen and (max-width: 1019px) {
     .content {
       max-width: 712px;
+      margin: 0 auto;
       /* max-width: 687px; */
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .content {
+      max-width: 355px;
+      margin: 0 29px;
     }
   }
   
@@ -429,7 +437,7 @@
   }
 
   @media screen and (max-width: 1029px) {
-    .about-us .section-title {
+    .section-title-about-us {
       padding-top: 62px;
     }
 
@@ -456,6 +464,28 @@
 
     .about-us .social-media {
       margin-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .section-title-about-us {
+      padding-top: 41px;
+    }
+
+    .section-text-about-us {
+      width: 300px;
+    }
+
+    .layout-3-column-about-us {
+      flex-direction: column;
+      margin: 0 auto;
+      margin-top: -13px;
+      margin-bottom: -31px;
+    }
+
+    .about-us-item {
+      width: 100%;
+      margin-bottom: 43px;
     }
   }
   
@@ -624,6 +654,48 @@
       margin-top: -12px;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .quote-title {
+      padding-top: 55px;
+    }
+
+    .quote-text {
+      width: 300px;
+    }
+
+    .quote-content {
+      margin-top: 23px;
+      flex-direction: column;
+    }
+
+    .form {
+      width: 315px;
+    }
+
+    .input-5 {
+      width: 315px;
+      margin-top: 3px;
+    }
+
+    .quote-contact {
+      margin-top: 29px;
+      margin-left: 0;
+    }
+
+    .quote-contact-text {
+      width: 316px;
+    }
+
+    .contact-links {
+      margin-top: -8px;
+      margin-bottom: 11px;
+    }
+
+    .quote-contacts {
+      margin-bottom: 3px;
+    }
+  }
   
   /* POPUP */
   
@@ -725,7 +797,16 @@
   }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .copyright {
+    display: none;
+  }
+
+  .footer-social-media {
+    margin: 0 auto;
+    position: relative;
+    right: 2px;
+  }
 
 }
 

@@ -12,12 +12,14 @@
   
   .content {
     max-width: 940px;
+    /* width: 88vw; */
     margin: 0 auto;
   }
 
   @media screen and (max-width: 1019px) {
     .content {
-      max-width: 687px;
+      max-width: 712px;
+      /* max-width: 687px; */
     }
   }
   
@@ -100,6 +102,14 @@
   p {
     margin: 0;
   }
+
+  @media screen and (max-width: 1019px) {
+    .navigation-item {
+      position: relative;
+      right: 24px;
+      top: -6px;
+    }
+  }
   
   
   /* SLIDER */
@@ -116,17 +126,13 @@
     top: 287px;
   }
 
-  .slider-button {
-    display: block;
-  }
-  
-  .slider-button:hover {
+  .slider-button-right:hover,
+  .slider-button-left:hover {
     opacity: 0.6;
     cursor: pointer;
   }
   
   .slider-button-right {
-    /* margin-left: 907px; */
     right: 5px;
   }
   
@@ -146,6 +152,17 @@
   } 
 
   @media screen and (max-width: 1019px) {
+    .slider-button-left {
+      position: relative;
+      left: -12px;
+    }
+
+    .slider-button-right {
+      position: relative;
+      right: 11px;
+
+    }
+
     .slider-first-picture {
       margin-top: 12px;
       margin-left: 42px;
@@ -258,7 +275,7 @@
     }
 
     .service-items {
-      padding-right: 35px;
+      padding-right: 55px;
       padding-bottom: 52px;
     }
 
@@ -355,9 +372,18 @@
   }
 
   @media screen and (max-width: 1019px) {
+    .portfolio-items {
+      margin-top: 27px;
+      display: flex;
+      justify-content: center;
+      max-height: 792px;
+      margin-left: -40px;
+    }
     .portfolio-image {
       height: 184px;
       width: 216px;
+      margin-left: 19px;
+      margin-bottom: 19px;
     }
   }
   
@@ -403,12 +429,33 @@
   }
 
   @media screen and (max-width: 1029px) {
+    .about-us .section-title {
+      padding-top: 62px;
+    }
+
+    .layout-3-column-about-us {
+      padding-top: 39px;
+    }
+
     .about-us-item {
       width: 32%;
+      margin-right: 19px;
     }
 
     .about-us-image {
       width: 100%;
+    }
+
+    .about-us-item-title {
+      margin-top: 10px;
+    }
+
+    .about-us .layout-text {
+      margin-top: 2px;
+    }
+
+    .about-us .social-media {
+      margin-top: 10px;
     }
   }
   
@@ -426,12 +473,14 @@
   
   .quote-content {
     display: flex;
+    justify-content: space-between;
     margin-top: 41.5px;
   }
   
-  form {
+  .form {
     display: flex;
     flex-direction: column;
+    width: 620px;
   }
   
   .input {
@@ -443,13 +492,14 @@
     font-weight: 600;
     font-family: 'Lato', Arial, sans-serif;
     line-height: 21.56px;
-    width: 590px;
+    width: 100%;
     height: 39px;
     margin-bottom: 18px;
     padding-left: 15px;
     padding-right: 15px;
     outline: none;
     border-radius: 4px;
+    box-sizing: border-box;
   }
   
   .input-1 {
@@ -536,6 +586,43 @@
   
   .quote-link:active {
     color: #d6564f;
+  }
+
+  @media screen and (max-width: 1019px) {
+    .quote-title {
+      padding-top: 62px;
+    }
+
+    .quote-content {
+      margin-top: 27px;
+      padding-bottom: 31px;
+    }
+    .form {
+      width: 442px;
+      margin-right: 4px;
+    }
+
+    .input {
+      margin-bottom: 13px;
+    }
+
+    .input-4 {
+      height: 157px;
+    }
+
+    .input-5 {
+      margin-top: 5px;
+      width: 442px;
+    }
+
+    .quote-contact-text {
+      margin-top: 0;
+      width: 221px;
+    }
+
+    .contact-links {
+      margin-top: -12px;
+    }
   }
   
   /* POPUP */
@@ -628,6 +715,13 @@
   .social-media-icon:hover {
     opacity: 0.7;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1019px) {
+    .footer-social-media {
+      position: relative;
+      right: 26px;
+    }
   }
 
 

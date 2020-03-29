@@ -118,6 +118,19 @@
       top: -6px;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .logo {
+      position: relative;
+      top: 12px;
+      left: 98px;
+    }
+
+
+    .navigation {
+      display: none;
+    }
+  }
   
   
   /* SLIDER */
@@ -195,7 +208,44 @@
       top: 212px;
   }
 }
-  
+
+@media screen and (max-width: 767px) {
+  .slider-buttons {
+    top: 99px;
+  }
+
+  .phone-number-one {
+    height: 177px;
+    width: 88px;
+  }
+
+  .phone-number-two {
+    height: 88px;
+    width: 177px;
+  }
+
+  .slider-first-picture {
+    margin-top: -7px;
+    margin-left: 12px;
+    margin-bottom: 22px;
+  }
+
+  .slider-second-picture {
+    margin-top: 38px;
+    margin-left: 28px;
+}
+
+.slider-button-left {
+  position: relative;
+  left: -20px;
+}
+
+.slider-button-right {
+  position: relative;
+  right: -18px;
+
+}
+}
   
   /* SERVICE */
   .service {
@@ -273,7 +323,7 @@
   }
 
   @media screen and (max-width: 1019px) {
-    .service .section-title {
+    .section-title-service {
       padding-top: 49px;
     }
 
@@ -286,9 +336,29 @@
       padding-right: 55px;
       padding-bottom: 52px;
     }
+  }
 
-    .service-item {
+  @media screen and (max-width: 767px) {
+    .section-title-service {
+      padding-top: 36px;
+    }
 
+    .section-text-service {
+      margin-top: -1px;
+      width: 300px;
+    }
+
+    .layout-3-column {
+      margin-top: -7px;
+      margin-bottom: -30px;
+    }
+
+    .service-items {
+      margin-bottom: -23px;
+    }
+
+    .layout-text {
+      width: 226px;
     }
   }
   
@@ -299,7 +369,7 @@
     box-shadow: 0 -7px 0 0 #323746 inset;
   }
   
-  .section-title {
+  .section-title-portfolio {
     padding-top: 70px;
     letter-spacing: -0.2px;
   }
@@ -392,6 +462,33 @@
       width: 216px;
       margin-left: 19px;
       margin-bottom: 19px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .section-title-portfolio {
+      padding-top: 53px;
+    }
+
+    .portfolio-tags {
+      margin-top: 4px;
+    }
+
+    .portfolio-items {
+      margin-right: -22px;
+      margin-top: 24px;
+      max-height: 497px;
+      overflow: hidden;
+    }
+
+    .portfolio-item {
+      margin-left: -4px;
+      margin-bottom: -5px;
+    }
+
+    .portfolio-image {
+      height: 127px;
+      width: 151px;
     }
   }
   

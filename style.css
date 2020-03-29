@@ -14,6 +14,12 @@
     max-width: 940px;
     margin: 0 auto;
   }
+
+  @media screen and (max-width: 1019px) {
+    .content {
+      max-width: 687px;
+    }
+  }
   
   /* HEADER */
   header {
@@ -53,6 +59,10 @@
     flex-direction: row;
     margin-top: 38px;
     list-style-type: none;
+  }
+
+  .navigation-item {
+    margin-left: 9px;
   }
   
   .navigation li+li:before {
@@ -102,8 +112,12 @@
   .slider-buttons {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    margin-top: -320px;
+    position: relative;
+    top: 287px;
+  }
+
+  .slider-button {
+    display: block;
   }
   
   .slider-button:hover {
@@ -112,29 +126,55 @@
   }
   
   .slider-button-right {
-    margin-left: 907px;
+    /* margin-left: 907px; */
+    right: 5px;
   }
   
   .slider-phones {
     display: flex;
-    height: 600px;
   }
   
   .slider-first-picture {
-    margin-top: 37px;
-    margin-left: 62px;
+    margin-top: 25px;
+    margin-left: 69px;
+    margin-bottom: 62px;
   }
-  
+
   .slider-second-picture {
     margin-top: 147px;
-    margin-left: 68px;
+    margin-left: 74px;
   } 
+
+  @media screen and (max-width: 1019px) {
+    .slider-first-picture {
+      margin-top: 12px;
+      margin-left: 42px;
+      margin-bottom: 46px;
+    }
+  
+    .slider-second-picture {
+      margin-top: 105px;
+      margin-left: 55px;
+    } 
+    .phone-number-one {
+      max-width: 182px;
+      max-height: 365px;
+    }
+
+    .phone-number-two {
+      max-height: 182px;
+      max-width: 365px;
+    }
+
+    .slider-buttons {
+      top: 212px;
+  }
+}
   
   
   /* SERVICE */
   .service {
     width: 100%;
-    height: 499px;
     background-color: #f2f2f2;
     box-shadow: 0 -7px 0 0 #ffffff inset;
   }
@@ -147,7 +187,7 @@
     padding-left: 0px;
     letter-spacing: -0.3px;
   }
-  
+
   .section-text {
     font-size: 1.8rem;
     line-height: 30px;
@@ -161,15 +201,15 @@
   .layout-3-column {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 17.5px;
+    padding-top: 46.5px;
+    padding-bottom: 35px;
     justify-content: space-between;
   }
   
   .service-items {
     display: flex;
     width: 300px;
-    padding-top: 29px;
-    padding-bottom: 14px;
+    padding-bottom: 31px;
   }
   
   .service-item {
@@ -206,9 +246,25 @@
     letter-spacing: 0.1px;
     margin-top: -3px;
   }
-  
-  .service-items-2 {
-    margin-top: -10px;
+
+  @media screen and (max-width: 1019px) {
+    .service .section-title {
+      padding-top: 49px;
+    }
+
+    .layout-3-column {
+      padding-top: 38px;
+      padding-bottom: 23px;
+    }
+
+    .service-items {
+      padding-right: 35px;
+      padding-bottom: 52px;
+    }
+
+    .service-item {
+
+    }
   }
   
   /* PORTFOLIO */
@@ -269,21 +325,16 @@
   .portfolio-link.active {
     color: #ffffff;
   }
-  
-  .layout-4-column {
-    margin-top: 5px;
-    padding-bottom: 74px;
-  }
-  
+   
   .portfolio-items {
-    margin-right: 20px;
+    padding-bottom: 74px;
     margin-top: 16px;
     display: flex;
     flex-wrap: wrap;
-    width: 971px;
     max-height: 603px;
     overflow: hidden;
     list-style: none;
+    margin-left: -20px;
   }
   
   .portfolio-link {
@@ -294,13 +345,20 @@
   .portfolio-image {
     height: 187px;
     width: 220px;
-    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
   }
   
   .portfolio-image.active {
     box-sizing: border-box;
     border: #F06C64 5px solid;
+  }
+
+  @media screen and (max-width: 1019px) {
+    .portfolio-image {
+      height: 184px;
+      width: 216px;
+    }
   }
   
   
@@ -313,12 +371,17 @@
   
   .layout-3-column-about-us {
     display: flex;
+    justify-content: space-between;
     padding-top: 43px;
     padding-bottom: 72px;
   }
   
   .about-us-item {
-    margin-right: 19px;
+    max-width: 300px;
+  }
+
+  .about-us-image {
+    max-width: 300px;
   }
   
   .about-us-item-title {
@@ -329,10 +392,24 @@
     display: flex;
     margin-top: 22px;
   }
+
+  .social-media-icon {
+    margin-right: 5px;
+  }
   
   .social-media-icon:hover {
     opacity: 0.8;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1029px) {
+    .about-us-item {
+      width: 32%;
+    }
+
+    .about-us-image {
+      width: 100%;
+    }
   }
   
   /* QUOTE */
@@ -541,6 +618,11 @@
   
   .footer-social-media {
     display: flex;
+  }
+
+  .footer .social-media-icon {
+    margin-right: 0;
+    margin-left: 5px;
   }
   
   .social-media-icon:hover {

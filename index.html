@@ -17,11 +17,11 @@
         </a>
         <nav>
           <ul id='menu' class="navigation">
-            <li><a class='header-link active' href="#">home</a></li>
-            <li><a class='header-link' href="#services">services</a></li>
-            <li><a class='header-link' href="#portfolio">portfolio</a></li>
-            <li><a class='header-link' href="#about">about</a></li>
-            <li><a class='header-link' href="#contact">contact</a></li>
+            <li class='navigation-item'><a class='header-link active' href="#">home</a></li>
+            <li class='navigation-item'><a class='header-link' href="#services">services</a></li>
+            <li class='navigation-item'><a class='header-link' href="#portfolio">portfolio</a></li>
+            <li class='navigation-item'><a class='header-link' href="#about">about</a></li>
+            <li class='navigation-item'><a class='header-link' href="#contact">contact</a></li>
           </ul>
         </nav>
       </section>
@@ -30,13 +30,17 @@
 
   <div class="slider">
     <div class="content">
+      <div class="slider-buttons">
+        <img class="slider-button" src="./Assets/Images/slider-preview.svg" alt="slider">
+        <img class=" slider-button slider-button-right" src="./Assets/Images/slider-next.svg" alt="slider">
+      </div>
       <div class="slider-phones">
         <div class="slider-first-picture">
-          <img src="./Assets/Images/iPhone Vertical.png" alt="iphone">
+          <img class='phone-number-one' src="./Assets/Images/iPhone Vertical.png" alt="iphone">
           </div>
 
           <div class="slider-second-picture">
-            <img src="./Assets/Images/iPhone Horizontal.png" alt="iphone">
+            <img class='phone-number-two' src="./Assets/Images/iPhone Horizontal.png" alt="iphone">
           </div>
         </div>
     </div>
@@ -44,10 +48,6 @@
 
   <section class="service">
     <div class="content">
-      <div class="slider-buttons">
-        <img class="slider-button" src="./Assets/Images/slider-preview.svg" alt="slider">
-        <img class=" slider-button slider-button-right" src="./Assets/Images/slider-next.svg" alt="slider">
-      </div>
       <h2 id='services' class="section-title">Our Services</h2>
       <p class=" section-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class="layout-3-column">
@@ -82,7 +82,7 @@
           </div>
         </div>
 
-        <div class="service-items service-items-2">
+        <div class="service-items">
           <div class="image">
             <img src="./Assets/Images/phone.svg" alt="phone">
           </div>
@@ -92,7 +92,7 @@
           </div>
         </div>
 
-        <div class="service-items service-items-2">
+        <div class="service-items">
           <div class="image">
             <img src="./Assets/Images/bubble.svg" alt="bubble">
           </div>
@@ -102,7 +102,7 @@
           </div>
         </div>
 
-        <div class="service-items service-items-2">
+        <div class="service-items">
           <div class="image">
             <img src="./Assets/Images/star.svg" alt="star">
           </div class="service-item">
@@ -129,8 +129,7 @@
           <li class='tag'><a class='portfolio-link' href="#portfolio">Artwork</a></li>
         </ul>
       </nav>
-      <div id='layout' class="layout-4-column">
-        <ul class="portfolio-items">
+        <ul id='layout' class="portfolio-items">
           <li class="portfolio-item">
             <img class='portfolio-image' src="./Assets/Images/portfolio_image1.png" alt="illustration">
           </li>
@@ -178,7 +177,7 @@
       <p class=" section-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class="layout-3-column-about-us">
         <div class="about-us-item">
-          <img src="./Assets/Images/about-photo1.png" alt="Adam">
+          <img class='about-us-image' src="./Assets/Images/about-photo1.png" alt="Adam">
           <h3 class="about-us-item-title  layout-title">Adam Jensen</h3>
           <p class="layout-text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
           <div class="social-media">
@@ -190,7 +189,7 @@
         </div>
 
         <div class="about-us-item">
-          <img src="./Assets/Images/about-photo2.png" alt="Desmond">
+          <img class='about-us-image' src="./Assets/Images/about-photo2.png" alt="Desmond">
           <h3 class="about-us-item-title  layout-title">Desmond Miles</h3>
           <p class="layout-text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
           <div class="social-media">
@@ -202,7 +201,7 @@
         </div>
 
         <div class="about-us-item">
-          <img src="./Assets/Images/about-photo3.png" alt="Scolara">
+          <img class='about-us-image' src="./Assets/Images/about-photo3.png" alt="Scolara">
           <h3 class="about-us-item-title  layout-title">Scolara Visari</h3>
           <p class="layout-text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
           <div class="social-media">
@@ -240,7 +239,7 @@
           <input id='btn' class='input input-5' type="submit" value="submit">
 
         </form>
-        <div id='contact' class="quote-contact">
+        <!-- <div id='contact' class="quote-contact">
           <h3 class="layout-title quote-contact-title">Contact Information</h3>
           <p class=" layout-text quote-contact-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
           <div class="contact-links">
@@ -248,7 +247,7 @@
             <p class='quote-contacts'><img class='quote-img' src="./Assets/Images/quote-phone.png" alt="phone"><a class='quote-link' href="tel:035283318635">03528 331 86 35</a></p>
             <p class='quote-contacts'><img class='quote-img' src="./Assets/Images/quote-mail.png" alt="mail"><a class='quote-link' href="mailto:info@singolo.com">info@singolo.com</a></p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

@@ -1,12 +1,17 @@
   :root {
-    color: #666d89;
+    --bg-dark: #2d303a;
+    --bg-light: #f2f2f2;
+    --color-light: #f0d8d9;
+    --color-bright: #f06c64;
     font-size: 10px;
   }
   
   * {
-    font-family: 'Lato', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Lato', Arial, sans-serif;
+    color: #666d89;
     scroll-behavior: smooth;
   }
   
@@ -18,11 +23,11 @@
   /* HEADER */
   header {
     position: sticky;
+    top: 0;
     width: 100%;
     height: 95px;
-    background-color: #2d303a;
+    background-color: var(--bg-dark);
     box-shadow: 0 -7px 0 0 #323645 inset;
-    top: 0;
   }
   
   .header {
@@ -42,11 +47,11 @@
   }
   
   .header-colored {
-    color: #f06c64;
+    color: var(--color-bright);
   }
   
   .logo-link {
-    color: #f0d8d9;
+    color: var(--color-light);
   }
   
   .navigation {
@@ -84,7 +89,7 @@
   }
   
   .header-link.active {
-    color: #f06c64;
+    color: var(--color-bright);
   }
   
   .header-link:not(.active):hover {
@@ -120,7 +125,7 @@
   /* SLIDER */
   .slider {
     width: 100%;
-    background-color: #f06c64;
+    background-color: var(--color-bright);
     box-shadow: 0 -6px 0 0 #ea666b inset;
   }
   
@@ -233,7 +238,7 @@
   /* SERVICE */
   .service {
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: var(--bg-light);
     box-shadow: 0 -7px 0 0 #ffffff inset;
   }
   
@@ -348,7 +353,7 @@
   /* PORTFOLIO */
   .portfolio {
     width: 100%;
-    background-color: #2d303a;
+    background-color: var(--bg-dark);
     box-shadow: 0 -7px 0 0 #323746 inset;
   }
   
@@ -429,7 +434,7 @@
   
   .portfolio-image.active {
     box-sizing: border-box;
-    border: #F06C64 5px solid;
+    border: var(--color-bright) 5px solid;
   }
 
   @media screen and (max-width: 1019px) {
@@ -479,7 +484,7 @@
   /* ABOUT US */
   .about-us {
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: var(--bg-light);
     box-shadow: 0 -7px 0 0 #ffffff inset;
   }
   
@@ -571,9 +576,12 @@
   
   /* QUOTE */
   .quote {
-    background-color: #f06c64;
+    background-color: var(--color-bright);
     box-shadow: 0 -7px 0 0 #ea676b inset;
-    color: #f0d8d9;
+  }
+
+  .quote * {
+    color: var(--color-light);
   }
   
   .quote-title {
@@ -597,7 +605,6 @@
     display: block;
     border: none;
     background-color: #d6564f;
-    color: #f0d8d9;
     font-size: 1.6rem;
     font-weight: 600;
     font-family: 'Lato', Arial, sans-serif;
@@ -635,7 +642,6 @@
     cursor: pointer;
     margin-top: -56px;
     font-size: 1.6rem;
-    color: #f0d8d9;
     box-shadow: 0 0 8px rgba(0,0,0,0.5);
   }
   
@@ -684,10 +690,6 @@
   
   .quote-img {
     padding-right: 12px;
-  }
-  
-  .quote-link {
-    color: #f0d8d9;
   }
   
   .quote-link:hover {
@@ -839,8 +841,7 @@
   
   /* FOOTER */
   footer {
-    background-color: #2d303a;
-    color: #666d89;
+    background-color: var(--bg-dark);
   }
   
   .footer {

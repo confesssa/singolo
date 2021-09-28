@@ -236,9 +236,9 @@
   <section id='contact' class="quote">
     <div id="message-block" class='hidden'>
       <div id="message" class='message'>
-        <p class='message-title'>Письмо отправлено!</p>
-        <p class='topic'>Тема: <span id='result-topic'>Без темы</span></p>
-        <p class='description'>Описание: <span id='result-description'>Без описания</span></p>
+        <p class='message-title'>Email sent!</p>
+        <p class='topic'>Topic: <span id='result-topic'></span></p>
+        <p class='description'>Description: <span id='result-description'></span></p>
         <br>
         <button id="close-btn" class='input input-6' >OK</button>
       </div>
@@ -248,7 +248,7 @@
       <h2 class="section-title quote-title">Get a Quote</h2>
       <p class="section-text quote-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class="quote-content">
-        <form class='form' method="POST">
+        <form id="form" class='form' method="POST">
           <input id="form-name" class='input input-1' required type="text" name="Name" placeholder="Name (Required)">
           <input id="form-mail" class='input input-2' required type="email" name="Email" placeholder="Email (Required)">
           <input id="form-subject" class='input input-3' type="text" name="Subject"  placeholder="Subject">

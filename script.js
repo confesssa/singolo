@@ -2,12 +2,16 @@ const MENU = document.getElementById("menu");
 const TAGS = document.getElementById("tags");
 const LAYOUT = document.getElementById("layout");
 const MESSAGE = document.getElementById("message-block");
+
 const NAME = document.getElementById("name");
 const MAIL = document.getElementById("mail");
 const SUBJECT = document.getElementById("subject");
 const DESCRIPTION = document.getElementById("description");
+
+const RESULT_TOPIC = document.getElementById("result-topic");
+const RESULT_DESCR = document.getElementById("result-description");
+
 const FORM = document.getElementById("form");
-const BUTTON = document.getElementById("btn");
 const CLOSE_BUTTON = document.getElementById("close-btn");
 
 // MENU-SWITCHING
@@ -43,31 +47,33 @@ LAYOUT.addEventListener("click", (event) => {
 // POPUP-SHOW
 FORM.addEventListener("submit", (event) => {
   event.preventDefault();
-  let topic = document.querySelector("#form-subject").value;
-  let description = document.querySelector("#form-description").value;
-  document.querySelector("#result-topic").innerText = topic;
-  document.querySelector("#result-description").innerText = description;
+  let topic = SUBJECT.value;
+  let description = DESCRIPTION.value;
+  RESULT_TOPIC.innerText = topic;
+  RESULT_DESCR.innerText = description;
   document.querySelector("#message-block").classList.remove("hidden");
 
   if (topic !== "") {
-    document.querySelector("#result-topic").innerText = topic;
+    RESULT_TOPIC.innerText = topic;
   } else {
-    document.querySelector("#result-topic").innerText = "No subject";
+    RESULT_TOPIC.innerText = "No subject";
   }
 
   if (description !== "") {
-    document.querySelector("#result-description").innerText = description;
+    RESULT_DESCR.innerText = description.slice(0, 50);
   } else {
-    document.querySelector("#result-description").innerText = "No description";
+    RESULT_DESCR.innerText = "No description";
   }
+  NAME.innerText = "";
+  MAIL.innerText = "";
+  SUBJECT.innerText = "";
+  DESCRIPTION.innerText = "";
 });
 
 // POPUP-HIDDEN
-CLOSE_BUTTON.addEventListener("click", () => {
+CLOSE_BUTTON.addEventListener("click", (event) => {
   event.preventDefault();
-  let topic = document.querySelector("#form-subject").value;
-  let description = document.querySelector("#form-description").value;
-  document.querySelector("#result-topic").innerText = "";
-  document.querySelector("#result-description").innerText = "";
+  RESULT_TOPIC.innerText = "";
+  RESULT_DESCR.innerText = "";
   document.querySelector("#message-block").classList.add("hidden");
 });

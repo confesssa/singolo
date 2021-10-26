@@ -234,9 +234,9 @@
   </section>
 
   <section id='contact' class="quote">
-    <div id="message-block" class='hidden'>
+    <div id="message-block" class='message-block hidden'>
       <div id="message" class='message'>
-        <p class='message-title'>Email sent!</p>
+        <div class='message-title'>Email sent!</div>
         <p class='topic'>Topic: <span id='result-topic'></span></p>
         <p class='description'>Description: <span id='result-description'></span></p>
         <br>
@@ -249,10 +249,10 @@
       <p class="section-text quote-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class="quote-content">
         <form id="form" class='form' method="POST">
-          <input id="form-name" class='input input-1' required type="text" name="Name" placeholder="Name (Required)">
-          <input id="form-mail" class='input input-2' required type="email" name="Email" placeholder="Email (Required)">
-          <input id="form-subject" class='input input-3' type="text" name="Subject"  placeholder="Subject">
-          <textarea id="form-description" class='input input-4' name="description" cols="30" rows="10" placeholder="Describe your project in detail..." style="resize:none"></textarea>
+          <input id="name" class='input input-1' required type="text" name="Name" placeholder="Name (Required)">
+          <input id="mail" class='input input-2' required type="email" name="Email" placeholder="Email (Required)">
+          <input id="subject" class='input input-3' type="text" name="Subject"  placeholder="Subject">
+          <textarea id="description" class='input input-4' name="description" cols="30" rows="10" placeholder="Describe your project in detail..." style="resize:none"></textarea>
           <button id='btn' class='input input-5' type="submit" value="submit">Submit</button>
 
         </form>

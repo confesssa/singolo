@@ -772,43 +772,54 @@ textarea::placeholder {
 
 /* POPUP */
 
-#message-block {
+.message-block {
   position: fixed;
+  display: flex;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
   background: #0008;
+  color: var(--color-bright);
 }
 
-#message-block.hidden {
+.message-block.hidden {
   display: none;
+}
+
+.message-block * {
+  color: var(--color-bright);
 }
 
 .message {
   position: absolute;
-  top: 25%;
-  left: 35%;
-  border: 4px solid white;
+  background: #fff;
+  border-radius: 15px;
   text-align: center;
   font-size: 1.8rem;
-  max-height: 300px;
-  max-width: 400px;
+  height: 300px;
+  width: 550px;
   line-height: 35px;
   font-size: 2rem;
-  color: #ea666b;
+  margin-top: 30vh;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
 .message-title {
   text-align: center;
   font-size: 3rem;
+  margin: 20px;
 }
 
 .message p {
   margin-top: 30px;
+  margin-left: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: left;
+  color: black;
 }
 
 .topic,
@@ -818,7 +829,7 @@ textarea::placeholder {
 
 #result-topic,
 #result-description {
-  color: #ffffff;
+  color: #f48c8f;
 }
 
 .input-6 {
@@ -826,6 +837,7 @@ textarea::placeholder {
   border-radius: 5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
+  color: #fff;
 }
 
 /* FOOTER */

@@ -146,18 +146,20 @@ p {
 }
 
 .slider-phones {
+  padding: 60px;
   display: flex;
+  justify-content: space-around;
 }
 
-.slider-first-picture {
+/* .slider-first-picture {
   margin-top: 25px;
   margin-left: 69px;
   margin-bottom: 62px;
-}
+} */
 
 .slider-second-picture {
   margin-top: 147px;
-  margin-left: 74px;
+  /* margin-left: 74px; */
 }
 
 @media screen and (max-width: 1019px) {
@@ -373,8 +375,6 @@ p {
   line-height: 22px;
   color: #767e9e;
   font-weight: 400;
-  border: 1px solid #767e9e;
-  border-radius: 5px;
   margin-right: 19px;
   height: 22px;
   text-align: center;
@@ -399,6 +399,7 @@ p {
 
 .portfolio-link.active {
   color: #ffffff;
+  border: 1px solid white;
 }
 
 .portfolio-items {
@@ -415,6 +416,9 @@ p {
 .portfolio-link {
   text-decoration: none;
   color: #767e9e;
+  border: 1px solid #767e9e;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 .portfolio-image {
